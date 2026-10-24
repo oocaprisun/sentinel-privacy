@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sentinel – Privacy Policy</title>
+<style>
+  body { margin: 0; background: #f4f3ef; color: #141517; font: 16px/1.6 system-ui, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
+  h1 { font-size: 30px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  p, li { color: #2b2d31; }
+  .date { color: #5c6066; margin: 0 0 24px; }
+  code { background: #e4e3de; padding: 1px 5px; border-radius: 4px; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #121315; color: #f2f1ec; }
+    p, li { color: #d4d5d8; }
+    .date { color: #a3a5aa; }
+    code { background: #26282c; }
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>Sentinel Privacy Policy</h1>
+<p class="date">Last updated: October 24, 2026</p>
+
+<p>Sentinel is a browser extension that rates the safety of the website you are visiting. It is built to work without collecting your data. This policy explains exactly what it does with information.</p>
+
+<h2>What we collect</h2>
+<p>Nothing. Sentinel has no account, no server of its own, no analytics, no telemetry and no ads. The developer never receives any information about you or your browsing.</p>
+
+<h2>What is processed on your device</h2>
+<ul>
+  <li>The address of the page you are on, to rate it and show its score.</li>
+  <li>Page features such as password or card forms, the page title and links, read locally to detect fake login pages.</li>
+  <li>The page's HTTP response headers, read locally to rate the site's security.</li>
+</ul>
+<p>Results are kept in memory and disappear when you close the browser. Page content and full addresses never leave your device.</p>
+
+<h2>Online checks (on by default, can be turned off)</h2>
+<p>To check a site's reputation, Sentinel sends <strong>only the bare domain name</strong> (for example <code>example.com</code>). It never sends the full address, cookies or page content. The domain name goes to these services:</p>
+<ul>
+  <li>Cloudflare and Quad9 security DNS, to see whether a domain is known to be malicious.</li>
+  <li>Cloudflare DNS, for DNSSEC and email security records.</li>
+  <li>The domain's registry (RDAP) or crt.sh, to find the domain's age.</li>
+  <li>The Internet Archive, to see how long the site has been on the web.</li>
+  <li>The site itself, for its <code>/.well-known/security.txt</code> file.</li>
+  <li>VirusTotal, only if you add your own API key in Settings.</li>
+</ul>
+<p>These requests are sent without cookies or a referrer. Each service handles requests under its own privacy policy. You can turn online checks off in Settings, and then all checks run on your device only.</p>
+
+<h2>Threat lists</h2>
+<p>Public phishing and malware lists are downloaded whole, about every 6 hours, and matched on your device. Downloading them reveals nothing about the sites you visit.</p>
+
+<h2>What is stored</h2>
+<p>Only your settings, your list of trusted sites, the downloaded threat lists and your optional VirusTotal key are stored, in your browser's local extension storage. They are never synced or sent anywhere. Removing the extension deletes them.</p>
+
+<h2>Sharing and selling</h2>
+<p>Sentinel does not sell, rent or share user data, and does not use data for advertising, creditworthiness or any purpose other than rating the site you are on.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be published on this page with a new date.</p>
+
+<h2>Contact</h2>
+<p>Questions: <a href="mailto:vasiledavid0908@gmail.com">vasiledavid0908@gmail.com</a></p>
+</main>
+</body>
+</html>
